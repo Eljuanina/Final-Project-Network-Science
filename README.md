@@ -11,5 +11,5 @@ For the extended analysis the previously generated `county_graph_with_ntl.gml` f
   - Open the terminal, navigate to `Extended_Analysis.ipynb` and create a virtual environment: `$ python3 -m venv myenv`
   - Activate the virtual environment: `$ source myenv/bin/activate`
   - Install the requirements through: `$ pip3 install -r requirements_extended_analysis.txt`
-  - Add vent as a kernel to VS Code: `$ python3 -m ipykernel install --user --name=venv --display-name "Python (myenv)"`
+  - Add venv as a kernel to VS Code: `$ python3 -m ipykernel install --user --name=venv --display-name "Python (myenv)"`
   - Run code.
