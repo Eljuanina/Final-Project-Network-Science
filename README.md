@@ -21,10 +21,27 @@ Before you begin, ensure you have the following:
    ```bash
    pip install -r requirements_analysis.txt
 
-#### Running the Analysis
-
 Once the requirements are installed, you can run the cells in the notebook to perform the network analysis.
 
+### Heatmap Analysis
+This guide will help you prepare and run the heatmap analysis efficiently. Follow these steps to ensure that all prerequisites are met and the analysis runs smoothly. The heatmap analysis uses network data to generate insightful visualizations and requires a specific setup before you can execute the `heatmaps.ipynb` notebook.
+
+#### Prerequisites
+
+1. **Python 3.11**  
+   Ensure you are using **Python 3.11** for compatibility with the dependencies.
+
+2. **The `county_graph_with_ntl.gml` file**  
+   This file is required for the analysis and should be in the same directory as the `heatmaps.ipynb` notebook file.  
+   - If the `.gml` file is not in the same directory, you will need to update the file path in the code. Locate the path where the `.gml` file is stored and modify the path in the code accordingly.
+
+3. **Install the required dependencies**  
+   You can install all necessary libraries using the `requirements_heatmap.txt` file. Run the following command in your terminal:
+
+   ```bash
+   pip install -r requirements_heatmap.txt
+   
+Once the prerequisites are met, open the heatmaps.ipynb notebook and run the cells to perform the network analysis.
 
 ### Extended Analysis
 For the extended analysis the previously generated `county_graph_with_ntl.gml` file was used. All relevant code can be found in the Jupyter Notebook `Extended_Analysis.ipynb`. To run the code, please follow these instructions: 
