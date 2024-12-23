@@ -4,6 +4,26 @@
 
 
 ### Network Analysis
+This repository contains a network analysis project that requires the `county_graph_with_ntl.gml` file to function properly. Follow the instructions below to set up and run the analysis.
+
+#### Prerequisites
+
+Before you begin, ensure you have the following:
+
+1. **Python 3.11**: Ensure you are using **Python 3.11** for compatibility with the dependencies.
+
+2. **The `county_graph_with_ntl.gml` file**: This file is required for the analysis. It should be in the same directory as the `analysis.ipynb` notebook file.  
+   - If the `.gml` file is not in the same directory, you will need to update the file path in the code. Locate the path where the `.gml` file is stored and modify the path in the code accordingly.
+
+3. **Install the required dependencies**:  
+   You can install all necessary libraries using the `requirements_analysis.txt` file. This can be done with the following command:
+
+   ```bash
+   pip install -r requirements_analysis.txt
+
+#### Running the Analysis
+
+Once the requirements are installed, you can run the cells in the notebook to perform the network analysis.
 
 
 ### Extended Analysis
