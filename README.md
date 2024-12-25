@@ -1,6 +1,26 @@
 # Final-Project-Network-Science
 
+### Network Creation
+Before you begin, follow this steps:
+
+1. **Python 3.11**: Ensure you are using **Python 3.11** for compatibility with the dependencies.
+
+2. **Install the required dependencies**:  
+   You can install all necessary libraries using the `requirements_network_creation.txt` file. This can be done with the following command:
+
+   ```bash
+   pip install -r requirements_network_creation.txt
+
+3. **Download the required data**:
+   Make sure that you download the `gadm41_USA.gpkg` file from https://geodata.ucdavis.edu/gadm/gadm4.1/gpkg/gadm41_USA.gpkg 
+
+- `Network_Creation.ipynb` retrieves the data at the county level, filters it for the states Georgia & South Carolina and creates a network by taking counties as nodes and common borders between counties as edges. This creates the following file `county_graph.gml`.
+
 - `NTL_of_counties.ipynb` adds night time light time series as attributes to the network created by `Network_Creation.ipynb`. To run the code, ensure that `county_graph.gml` is in the working directory and download the night time light `.tif` files from our project folder number 14 (https://uzh.sharepoint.com/:f:/s/NetworkScienceHS24/EhnFsb0ubr9AqxtA4KFpKIoB73CMLJClc0SzJp8Z1c9uag?e=v0PniN) into a subfolder called `ntl_long_range`.
+
+- `NX_NTL_weighted_edges.ipynb` adds the weights to the edges. It contains the function normalize weights, which takes a graph and a date as input and sums up the average NTL-values
+for two neighbouring counties and divides them by two. Then it normalizes them between 0 & 1 and inverts the value, so that basic functions from the networkx pckg can be applied, such as 
+betweenness_centrality for example, which will be used in the extended analysis.
 
 
 ### Network Analysis
